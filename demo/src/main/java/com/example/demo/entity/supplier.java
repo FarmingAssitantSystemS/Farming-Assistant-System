@@ -1,14 +1,9 @@
 package com.example.demo.entity;
 
-import java.util.List;
-
-import javax.annotation.Generated;
-import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-//import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,9 +16,40 @@ public class supplier {
 	@Id
 	@GeneratedValue
 	
-	private int supplierId; 
+	private int supplierId;
+	@Column(name = "suppliername",nullable=false)
 	private String supplierName;
-	private String 
+	@Column(name = "Address",nullable=false)
+	private String Address;
+	@Column(name = "phno",nullable=false)
+	private String phno;
+	public int getSupplierId() {
+		return supplierId;
+	}
+	public void setSupplierId(int supplierId) {
+		this.supplierId = supplierId;
+	}
+	public String getSupplierName() {
+		return supplierName;
+	}
+	public void setSupplierName(String supplierName) {
+		this.supplierName = supplierName;
+	}
+	public String getAddress() {
+		return Address;
+	}
+	public void setAddress(String address) {
+		Address = address;
+	}
+	public String getPhno() {
+		return phno;
+	}
+	public void setPhno(String phno) {
+		this.phno = phno;
+	}
+	
+	
+	
 	
 
 }

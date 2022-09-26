@@ -1,16 +1,18 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.supplier;
+import java.util.List;
+
+import com.example.demo.entity.Supplier;
 
 public class SupplierServiceImpl implements ISupplierService {
     @Override
-	public supplier addSupplier(supplier S1) {
+	public Supplier addSupplier(Supplier S1) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public supplier updateSupplier(int supplierId, supplier S1) {
+	public Supplier updateSupplier(int supplierId, Supplier S1) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -20,5 +22,13 @@ public class SupplierServiceImpl implements ISupplierService {
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public List<Supplier> getAllSupplier() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 
 }
